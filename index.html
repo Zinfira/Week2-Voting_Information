@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags for bootstrap 4 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Styles  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JavaScript  -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <title>Web Template</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- input form  -->
+    <div id="age-form" class="row">
+      <div class="col-md-6 offset-md-3 box-decore">
+        <h1 class="text-center">Voting Information</h1>
+        <form id="age-check">
+          <div class="form-group">
+            <label for="input-1">Enter you age</label>
+            <input type="text" class="form-control" id="age" aria-describedby="input">
+          </div>
+          <button id="submitBtn" type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="hidden" id="Under-18">
+      <p>We are sorry, you can only vote once you turn 18 years of age</p>
+      <p>You can learn more about age requirements<a href="https://www.usa.gov/voter-registration-age-requirements">
+          here</a></p>
+    </div>
+
+    <div class="hidden" id="Over-18">
+      <p>If you would like to register to vote, use this <a href="https://www.usa.gov/register-to-vote#item-212645">
+          link</a>, and fill out the form below:</p>
+      <p>Choose nearest polling location/ballot dropbox is:</p>
+      <form id="form-location">
+        <select class="form-control" id="location">
+          <option>Northwest Portland</option>
+          <option>Southwest Portland</option>
+          <option>Northeast Portland</option>
+          <option>Southeast Portland</option>
+          <option>North Portland</option>
+          <option>East Portland</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
